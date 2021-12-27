@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+:root{
+    /* primary */
+    --cyan: hsl(179, 62%, 43%);
+    --bright-yellow: hsl(71, 73%, 54%);
+    
+    /* neutral */
+    --light-gray: hsl(204, 43%, 93%);
+    --grayish-blue: hsl(218, 22%, 67%);
+    --mob-padding: 0 1.5rem;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Karla', sans-serif;
+    font-size: 1rem;
+    box-sizing: border-box;
+    background-color: var(--light-gray);
+}
+.pack{
+    padding: 4.5rem 2rem;
+}
+.cards{
+    box-shadow: 0 0 1.25rem rgba(0, 0, 0, 0.1);
+}
+.card1{
+    padding: 2rem 1.625rem 2.375rem 1.5rem;
+    background-color: white;
+    border-radius: 0.2rem 0.2rem 0 0;
+}
+.head1{
+    color: var(--cyan);
+    padding-bottom: 1.5rem;
+}
+.sub-head1{
+    color: var(--bright-yellow);
+    font-size: 1rem;
+    padding-bottom: 1.44rem;
+}
+.text1{
+    color: var(--grayish-blue);
+}
+
+.card2{
+    padding:  1.625rem ;
+    background-color: var(--cyan);
+}
+.head2{
+    color: white;
+    padding-bottom: 1.5rem;
+}
+.flex-text{
+    color: var(--light-gray);
+    padding-bottom: 1rem;
+}
+.flex-text span{
+    font-size: 1.875rem;
+    color: white;
+}
+.sub-head2{
+    color: white;
+    padding-bottom: 2rem;
+}
+.btn{
+    position: relative;
+    background-color: var(--bright-yellow);
+    border: none;
+    width: 100%;
+    max-width: 16.22rem;
+    height: 3.125rem;
+    color: white;
+    cursor: pointer;
+    border-radius: 0.2rem;
+    font-family: 'Karla', sans-serif;
+    box-shadow: 0 0 1.25rem rgba(0,0,0,0.1);
+}
+.btn::before{
+    content: '';
+    position:absolute;
+    width: 3.5rem;
+    height: 0.125rem;
+    background-color: white;
+    bottom: 0.6875rem;
+    transform: scale(0,1);
+    transition: all 150ms ease-in-out;
+}
+.btn:hover::before{
+    transform: scale(1,1);
+}
+
+.card3{
+    background-color: hsl(179, 47%, 52%);
+    color: white;
+    padding: 1.625rem 1.5rem;
+    border-radius: 0.2rem 0.2rem 0 0;
+}
+.head3{
+    padding-bottom: 1.5rem;
+}
+ ul li{
+    list-style: none;
+}
+@media  screen and (min-width: 46.875em) {
+
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .cards{
+        max-width: 39.125rem;
+    }
+    .card1{
+        padding:  2.5rem;
+    }
+    .head1{
+        padding-bottom: 1.75rem;
+    }
+    .sub-head1{
+        padding-bottom: 1.125rem;
+    }
+    .sub-cards{
+        display: flex;   
+    }
+    .card2{
+        flex:1;
+        padding: 2.5rem 2.3125rem;
+    }
+    .card3{
+        flex: 1;
+        padding: 2.5rem 2.3125rem;
+    }
+}
